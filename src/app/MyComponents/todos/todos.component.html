@@ -6,8 +6,8 @@
 <div *ngIf="this.todos.length===0" else elseBlock>No Content to show</div>
 <div class="container" #elseBlock>
     <div class="row">
-        <div *ngFor="let todo of todos" class="col-md-4">
-            <app-todo-item [todo]="todo" (todoDelete)="deleteTodo($event)" (todoEdit)="editTodo($event)"></app-todo-item>
+        <div *ngFor="let todo of todos; index as i" class="col-md-4">
+            <app-todo-item [todo]="todo" [i]="i" (todoDelete)="deleteTodo($event)" (todoEdit)="editTodo($event)" (todoCheck)="checkTodo($event)"></app-todo-item>
         </div>
     </div>
 </div>

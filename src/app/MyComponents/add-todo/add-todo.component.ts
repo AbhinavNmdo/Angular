@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 import Todo from '../../Todo';
 
 @Component({
@@ -18,7 +18,7 @@ export class AddTodoComponent implements OnInit {
 
   onSubmit(){
     const todo = {
-      sno: 4,
+      sno: 2,
       title: this.todoTitle,
       desc: this.todoDesc,
       active: true
