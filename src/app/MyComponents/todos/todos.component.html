@@ -3,7 +3,8 @@
 <hr>
 <hr>
 <h3 class="my-4 text-decoration-underline">Your Todos</h3>
-<div class="container">
+<div *ngIf="this.todos.length===0" else elseBlock>No Content to show</div>
+<div class="container" #elseBlock>
     <div class="row">
         <div *ngFor="let todo of todos" class="col-md-4">
             <app-todo-item [todo]="todo" (todoDelete)="deleteTodo($event)" (todoEdit)="editTodo($event)"></app-todo-item>
