@@ -1,0 +1,9 @@
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">{{todo.title}}</h4>
+        <h6 class="card-subtitle mb-2 text-muted">{{todo.title}}</h6>
+        <p class="card-text">{{todo.desc}}</p>
+        <button class="btn btn-primary mx-1" (click)="onEdit(todo)">Edit</button>
+        <button class="btn btn-danger mx-1" (click)="onDelete(todo)">Delete</button>
+    </div>
+</div>
