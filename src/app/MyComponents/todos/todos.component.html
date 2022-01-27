@@ -1,3 +1,8 @@
+<app-add-todo (todoAdd)="addTodo($event)"></app-add-todo>
+<br>
+<hr>
+<hr>
+<h3 class="my-4 text-decoration-underline">Your Todos</h3>
 <div class="container">
     <div class="row">
         <div *ngFor="let todo of todos" class="col-md-4">

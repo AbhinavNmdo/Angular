@@ -44,5 +44,9 @@ export class TodosComponent implements OnInit {
   editTodo(todo: Todo){
     console.log(todo);
   }
+  addTodo(todo: Todo){
+    console.log(todo)
+    this.todos.push(todo)
+  }
 
 }

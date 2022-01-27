@@ -1,1 +1,14 @@
-<p>add-todo works!</p>
+<h3 class="my-4 text-decoration-underline">Add Todos</h3>
+<div class="container">
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="todoTitle" class="form-label">Todo Title</label>
+            <input [(ngModel)]="todoTitle" name="todoTitle" type="text" class="form-control" id="todoTitle">
+        </div>
+        <div class="mb-3">
+            <label for="todoDesc" class="form-label">Todo Description</label>
+            <textarea [(ngModel)]="todoDesc" name="todoDesc" id="todoDesc" cols="1" rows="3" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
