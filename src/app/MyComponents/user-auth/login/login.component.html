@@ -77,3 +77,9 @@
 
 <!-- Passing data to Parent component means using eventemitter -->
 <app-child (updateDataEvent)="updateData($event)"></app-child>
+<br>
+<br>
+
+<!-- Two Way Binding -->
+<input type="text" [(ngModel)]="name">
+<h5>Two way binding: {{name}}</h5>

@@ -56,4 +56,7 @@ export class LoginComponent implements OnInit {
     console.log(data);
   }
 
+  // Two Way Binding
+  name:any;
+
 }
