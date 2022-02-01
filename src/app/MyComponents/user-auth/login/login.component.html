@@ -41,6 +41,12 @@
 </div>
 
 <!-- For loop in angular -->
-<div *ngFor="let user of users">
-    <h5>{{user}}</h5>
+<div *ngFor="let user of employees">
+    <ul>
+        <li>{{user.name}}</li>
+        <li>{{user.number}}</li>
+        <ul *ngFor="let social of user.socialmedia">
+            <li>{{social}}</li>
+        </ul>
+    </ul>
 </div>

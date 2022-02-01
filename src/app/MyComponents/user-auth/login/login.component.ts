@@ -32,6 +32,12 @@ export class LoginComponent implements OnInit {
 
   // For loop
   users:string[] = ["abhay", "ashu", "papaji", "mummyji"];
+  employees = [
+    {name: "abhay", number: 123412341234, socialmedia:['insta', 'whatsapp', 'github']},
+    {name: "papaji", number: 123412341234, socialmedia:['youtube', 'facebook', 'zee']},
+    {name: "ashu", number: 123412341234, socialmedia:['snap', 'tinder', 'signal']},
+    {name: "abhay", number: 123412341234, socialmedia:['insta', 'whatsapp', 'facebook']},
+  ]
 
 
 }
