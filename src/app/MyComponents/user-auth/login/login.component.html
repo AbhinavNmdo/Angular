@@ -83,3 +83,10 @@
 <!-- Two Way Binding -->
 <input type="text" [(ngModel)]="name">
 <h5>Two way binding: {{name}}</h5>
+
+<!-- Pipes -->
+<h3>{{title | uppercase}}</h3>
+<h3>{{title | lowercase}}</h3>
+<h3>{{title | slice : 3 : 8}}</h3>
+<h3>{{2000.2300 | number : '1.2'}}</h3>
+<h3>{{date | date: 'fullDate'}}</h3>

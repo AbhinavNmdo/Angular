@@ -59,4 +59,8 @@ export class LoginComponent implements OnInit {
   // Two Way Binding
   name:any;
 
+  // Pipes
+  title:string = "my name is abhinav namdeo";
+  date = Date();
+
 }
