@@ -19,4 +19,5 @@ export class LoginComponent implements OnInit {
   getData(value:string){
     console.warn(value);
   }
+  show:null|boolean=false;
 }

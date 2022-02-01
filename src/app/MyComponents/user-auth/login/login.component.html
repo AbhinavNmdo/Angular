@@ -1,6 +1,16 @@
+<!-- Events in angular -->
 <button (click)="getPress()">Click me</button>
-<input type="text" (keypress)="getData(data1.value)" #data1 placeholder="keypress"> // Hit on Keypress
-<input type="text" (keyup)="getData(data2.value)" #data2 placeholder="keyup"> // Hit on Keyup
-<input type="text" (keydown)="getData(data3.value)" #data3 placeholder="keydown"> // Hit on Keydown
-<input type="text" (blur)="getData(data4.value)" #data4 placeholder="blur"> // Hit on when focus released
+<input type="text" (keypress)="getData(data1.value)" #data1 placeholder="keypress"> <!--Hit on Keypress -->
+<input type="text" (keyup)="getData(data2.value)" #data2 placeholder="keyup"> <!--Hit on Keyup-->
+<input type="text" (keydown)="getData(data3.value)" #data3 placeholder="keydown"> <!--Hit on Keydown-->
+<input type="text" (blur)="getData(data4.value)" #data4 placeholder="blur"> <!--Hit on when focus released-->
 <h4 (mouseover)="getPress()">Hover me</h4>
+
+<!-- If Else in angular -->
+    <!-- First method to make if else in angular -->
+<div *ngIf="show; else elseDiv">If Condition</div>
+<ng-template #elseDiv>Else Condition</ng-template>
+    <!-- Second method to make if else in angular -->
+<div *ngIf="show then ifblock else elseblock"></div>
+<ng-template #ifblock>second if block</ng-template>
+<ng-template #elseblock>second else block</ng-template>
