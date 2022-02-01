@@ -12,6 +12,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // events
   getPress(){
     console.warn("button clicked");
   }
@@ -19,7 +20,18 @@ export class LoginComponent implements OnInit {
   getData(value:string){
     console.warn(value);
   }
+
+  // ifelse first condition
   show:null|boolean=false;
+
+  // ifelse second condition
   color:string = "blue";
+
+  // SwitchCase
   switchColor:string="asdf";
+
+  // For loop
+  users:string[] = ["abhay", "ashu", "papaji", "mummyji"];
+
+
 }
