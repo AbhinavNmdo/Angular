@@ -39,5 +39,8 @@ export class LoginComponent implements OnInit {
     {name: "abhay", number: 123412341234, socialmedia:['insta', 'whatsapp', 'facebook']},
   ]
 
+  // Style Binding
+  styleColor = 'red';
+  styleBgColor = 'blue';
 
 }
