@@ -20,4 +20,5 @@ export class LoginComponent implements OnInit {
     console.warn(value);
   }
   show:null|boolean=false;
+  color:string = "blue";
 }
