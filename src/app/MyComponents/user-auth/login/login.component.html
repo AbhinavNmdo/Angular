@@ -27,3 +27,15 @@
 <ng-template [ngIf]="color==='blue'">
     <h1 style="color: blue;">Blue color</h1>
 </ng-template>
+
+<!-- Switch case in angular -->
+<div [ngSwitch]="switchColor">
+    <h1 *ngSwitchCase="'Red'" style="color: Red;">Red Color</h1>
+    <h1 *ngSwitchCase="'Blue'" style="color: Blue;">Blue Color</h1>
+    <h1 *ngSwitchCase="'Green'" style="color: Green;">Green Color</h1>
+    <h1 *ngSwitchCase="'Orange'" style="color: Orange;">Orange Color</h1>
+    <h1 *ngSwitchCase="'Pink'" style="color: Pink;">Pink Color</h1>
+    <h1 *ngSwitchCase="'Gold'" style="color: Gold;">Gold Color</h1>
+    <h1 *ngSwitchCase="'Silver'" style="color: Silver;">Silver Color</h1>
+    <h1 *ngSwitchDefault>Unknown Color</h1>
+</div>

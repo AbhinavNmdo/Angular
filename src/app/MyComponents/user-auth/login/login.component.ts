@@ -21,4 +21,5 @@ export class LoginComponent implements OnInit {
   }
   show:null|boolean=false;
   color:string = "blue";
+  switchColor:string="asdf";
 }
