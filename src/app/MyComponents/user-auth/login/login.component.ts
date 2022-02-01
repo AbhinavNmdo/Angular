@@ -12,4 +12,11 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getPress(){
+    console.warn("button clicked");
+  }
+
+  getData(value:string){
+    console.warn(value);
+  }
 }

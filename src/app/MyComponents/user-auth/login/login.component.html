@@ -1,1 +1,6 @@
-<p>login works!</p>
+<button (click)="getPress()">Click me</button>
+<input type="text" (keypress)="getData(data1.value)" #data1 placeholder="keypress"> // Hit on Keypress
+<input type="text" (keyup)="getData(data2.value)" #data2 placeholder="keyup"> // Hit on Keyup
+<input type="text" (keydown)="getData(data3.value)" #data3 placeholder="keydown"> // Hit on Keydown
+<input type="text" (blur)="getData(data4.value)" #data4 placeholder="blur"> // Hit on when focus released
+<h4 (mouseover)="getPress()">Hover me</h4>
