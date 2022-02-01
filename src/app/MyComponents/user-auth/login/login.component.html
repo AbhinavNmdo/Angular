@@ -53,3 +53,24 @@
 
 <!-- Style Binding -->
 <h5 [style.color]="styleColor" [style.backgroundColor]="styleBgColor">StyleBinding</h5>
+
+<!-- Basic form in angular -->
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+    <input type="text" ngModel name="username" id="username" placeholder="Username">
+    <br>
+    <br>
+    <input type="text" ngModel name="email" id="email" placeholder="Email">
+    <br>
+    <br>
+    <input type="number" ngModel name="number" id="number" placeholder="Number">
+    <br>
+    <br>
+    <button type="submit">Submit</button>
+    <br>
+    <br>
+</form>
+<ul>
+    <li>{{loginData.username}}</li>
+    <li>{{loginData.email}}</li>
+    <li>{{loginData.number}}</li>
+</ul>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -42,5 +43,12 @@ export class LoginComponent implements OnInit {
   // Style Binding
   styleColor = 'red';
   styleBgColor = 'blue';
+
+  // Login Form
+  loginData:any;
+  login(data:NgForm){
+    this.loginData = data;
+    console.log(data);
+  }
 
 }
