@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -45,9 +45,14 @@ export class LoginComponent implements OnInit {
   styleBgColor = 'blue';
 
   // Login Form
-  loginData:any;
-  login(data:NgForm){
+  loginData:{username: string, email: string, number: number} = {username: '', email: '', number:0}
+  login(data:{username: string, email: string, number: number}){
     this.loginData = data;
+    console.log(data);
+  }
+
+  // Event Emitter
+  updateData(data:any){
     console.log(data);
   }
 

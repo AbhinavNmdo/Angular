@@ -74,3 +74,6 @@
     <li>{{loginData.email}}</li>
     <li>{{loginData.number}}</li>
 </ul>
+
+<!-- Passing data to Parent component means using eventemitter -->
+<app-child (updateDataEvent)="updateData($event)"></app-child>
