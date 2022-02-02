@@ -1,1 +1,8 @@
-<h1 *ngFor="let data of users">{{data.firstname}} -- {{data._id}}</h1>
+<form #loginFormUser="ngForm" (ngSubmit)="loginDataUser(loginFormUser.value)">
+    <input type="text" name="username" id="username" ngModel>
+    <br><br>
+    <input type="password" name="password" id="password" ngModel>
+    <br><br>
+    <button type="submit">Login</button>
+</form>
+<h1 *ngFor="let data of users">{{data.firstname}} -- {{data.lastname}}</h1>

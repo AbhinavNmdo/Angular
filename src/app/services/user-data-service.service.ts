@@ -12,4 +12,9 @@ export class UserDataServiceService {
   users(){
     return this.http.get(this.url);
   }
+  loginuser:any;
+  saveuser(data:any){
+    this.loginuser = data
+    return this.loginuser;
+  }
 }

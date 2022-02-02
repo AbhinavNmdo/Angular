@@ -19,4 +19,11 @@ export class AboutmeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  loginDataUser(user:any){
+    console.log("User Data: ", user)
+    this.userData.saveuser(user).subscribe((result:any)=>{
+      console.log(result)
+    })
+  }
+
 }
