@@ -10,8 +10,10 @@ export class AboutmeComponent implements OnInit {
 
   users:any;
   constructor(private userData:UserDataServiceService) {
-    console.log(userData.users());
-    this.users = userData.users();
+    this.userData.users().subscribe((data:any)=>{
+      this.users = data.review
+      console.log(this.users)
+    });
   }
 
   ngOnInit(): void {

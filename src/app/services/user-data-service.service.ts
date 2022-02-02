@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,11 +6,10 @@ import { Injectable } from '@angular/core';
 })
 export class UserDataServiceService {
 
-  constructor() {}
+  url:string='https://investingdelta.herokuapp.com/api/review'
+  constructor(private http:HttpClient) {}
+
   users(){
-    return[
-      {name: 'Abhay', email: 'abhaynam22@gmail.com'},
-      {name: 'Ashu', email: 'ashunam22@gmail.com'}
-    ]
+    return this.http.get(this.url);
   }
 }
