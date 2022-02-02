@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-child',
@@ -7,9 +8,10 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
   @Output() updateDataEvent = new EventEmitter<String>();
-  constructor() { }
+  constructor(private route:ActivatedRoute) { }
 
   ngOnInit(): void {
+    console.log(this.route.snapshot.paramMap.get('slug'));
   }
 
 }

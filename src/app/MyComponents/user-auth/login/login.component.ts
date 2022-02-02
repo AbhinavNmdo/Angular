@@ -1,5 +1,6 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,9 +9,14 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  
+  constructor(private route:ActivatedRoute) {} // Setting parameter for Dynamic Routing
 
+  userLogin:string|null;
   ngOnInit(): void {
+    // Dynamic Routing
+    this.userLogin = this.route.snapshot.paramMap.get('slug');
+    console.log("userid is: ", this.route.snapshot.paramMap.get('slug'))
   }
 
   // events
@@ -74,4 +80,5 @@ export class LoginComponent implements OnInit {
   // loginUser(){
   //   console.log(this.loginForm.value);
   // }
+
 }

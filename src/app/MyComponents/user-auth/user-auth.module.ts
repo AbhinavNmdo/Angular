@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChildComponent } from './child/child.component';
 import { MultiplierPipe } from 'src/app/pipes/multiplier.pipe';
 import { RedEleDirective } from 'src/app/directives/red-ele.directive';
+import { AppRoutingModule } from 'src/app/app-routing.module';
 
 
 
@@ -18,7 +19,8 @@ import { RedEleDirective } from 'src/app/directives/red-ele.directive';
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   exports:[
     LoginComponent
