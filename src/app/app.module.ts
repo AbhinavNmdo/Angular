@@ -9,7 +9,6 @@ import { AddTodoComponent } from './MyComponents/add-todo/add-todo.component';
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './MyComponents/about/about.component';
 import { UserAuthModule } from './MyComponents/user-auth/user-auth.module';
-import { MultiplierPipe } from './pipes/multiplier.pipe';
 
 @NgModule({
   declarations: [
@@ -17,14 +16,13 @@ import { MultiplierPipe } from './pipes/multiplier.pipe';
     TodosComponent,
     TodoItemComponent,
     AddTodoComponent,
-    AboutComponent,
-    MultiplierPipe
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    UserAuthModule
+    UserAuthModule,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

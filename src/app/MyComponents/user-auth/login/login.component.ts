@@ -1,5 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -63,4 +63,15 @@ export class LoginComponent implements OnInit {
   title:string = "my name is abhinav namdeo";
   date = Date();
 
+
+  // Reactive Form
+  // ! But it doesn't work
+  // loginForm = new FormGroup({
+  //   username: new FormControl(''),
+  //   password: new FormControl('')
+  // });
+
+  // loginUser(){
+  //   console.log(this.loginForm.value);
+  // }
 }

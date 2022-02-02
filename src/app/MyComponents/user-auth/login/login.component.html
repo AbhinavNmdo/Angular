@@ -91,4 +91,17 @@
 <h3>{{2000.2300 | number : '1.2'}}</h3>
 <h3>{{date | date: 'fullDate'}}</h3>
 <!-- Custom Pipes -->
-<h3>{{100 | multiplier : '10'}}</h3>
+<h3>{{100 | multiplier : 5}}</h3>
+
+<!-- Reactive Form Group -->
+<!-- ! But It does'nt Work -->
+<!-- <form [formControl]='loginForm' (ngSubmit)="loginUser()">
+    <input type="text" name="firstname" formControlName="firstname">
+    <br><br>
+    <input type="password" name="password" formControlName="password">
+    <br><br>
+    <button type="submit">Login</button>
+</form> -->
+
+<!-- Custom Directive -->
+<h1 appRedEle>Hello World</h1>
