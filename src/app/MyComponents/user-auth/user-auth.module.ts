@@ -6,6 +6,8 @@ import { ChildComponent } from './child/child.component';
 import { MultiplierPipe } from 'src/app/pipes/multiplier.pipe';
 import { RedEleDirective } from 'src/app/directives/red-ele.directive';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { AboutmeComponent } from './aboutme/aboutme.component';
+import { AboutyouComponent } from './aboutyou/aboutyou.component';
 
 
 
@@ -15,6 +17,8 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     ChildComponent,
     MultiplierPipe,
     RedEleDirective,
+    AboutmeComponent,
+    AboutyouComponent,
   ],
   imports: [
     CommonModule,
